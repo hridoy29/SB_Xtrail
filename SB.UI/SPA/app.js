@@ -9,8 +9,6 @@ var app = angular.module('AngularDemoApp', ['ngRoute', 'ngCookies', 'angular.fil
 app.config(function ($routeProvider, $controllerProvider) {
     
     $routeProvider
-      
-
         
         .when('/UserRole', {
             templateUrl: '/SPA/SB/UserRole/UserRoleEntry.html',
@@ -83,6 +81,24 @@ app.config(function ($routeProvider, $controllerProvider) {
         .when('/', {
             templateUrl: '/SPA/Login/Login.html',
             controller: 'LoginController',
+            resolve: {
+                "check": function () {
+                    $('.note-popover').css("display", "none");
+                }
+            }
+        })
+        .when('/ItemGroup', {
+            templateUrl: '/SPA/SB/ItemGroup/ItemGroup.html',
+            controller: 'ItemGroupController',
+            resolve: {
+                "check": function () {
+                    $('.note-popover').css("display", "none");
+                }
+            }
+        })
+        .when('/Model', {
+            templateUrl: '/SPA/SB/Model/Model.html',
+            controller: 'ModelController',
             resolve: {
                 "check": function () {
                     $('.note-popover').css("display", "none");

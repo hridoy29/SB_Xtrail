@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Daily Operational Meeting</title>
+    <title>SB XTrail</title>
     @*@Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
@@ -17,9 +17,8 @@
 
 
     <!-- App favicon -->
-    @*<link rel="shortcut icon" href="~/Content/assets/images/logoBackLess.png">*@
-    @*<link rel="shortcut icon" href="~/Logo/DhakaRej.jpg">*@
-    <link rel="shortcut icon" href="~/Logo/regency_logo.png">
+   
+    <link rel="shortcut icon" href="~/Logo/SB_logo.png">
     @*<link href="../Content/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">*@
 
     <!-- App css -->
@@ -99,11 +98,11 @@
                 <span >
                     @*<img src="~/Content/assets/images/logoBackLess.png" style="height: 50px; width:50px;" alt="logo-small" class="logo-sm">*@
                     @*<img src="~/Logo/DhakaRej.jpg" style="height: 80px; width:80px;" alt="logo-small" class="logo-sm">*@
-                    <img src="~/Logo/regency_logo.png" style="height: 90%; width:auto;" alt="logo-small" class="logo-sm">
+                    <img src="~/Logo/SB_logo.png" style="height: 90%; width:auto;" alt="logo-small" class="logo-sm">
                 </span>
 
                 <span style="font-size:20px;" id="PowerUpLogoText">
-                    <strong id="LogoText">DOM </strong>
+                    <strong id="LogoText">SB XTrail </strong>
                 </span>
             </a>
         </div>
@@ -124,22 +123,14 @@
                         <h6 id="notiAll" class="dropdown-item-text">
                             Notifications (0)
                         </h6>
-                        <div id="notificationLi" class="slimscroll notification-list" ng-repeat="b in batteryStatus">
+                        <!--<div id="notificationLi" class="slimscroll notification-list" ng-repeat="b in batteryStatus">-->
                             <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                            <!--<a href="javascript:void(0);" class="dropdown-item notify-item active">
                                 <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
-                                <p class="notify-details">
-                                    Battery Status
-                                    <small class="text-muted">Location : {{b.location}}</small>
-                                    <small class="text-muted">Swap Station : {{b.swapStation}}</small>
-                                    <small class="text-muted">Charging Unit : {{b.chargingUnit}}</small>
-                                    <small class="text-muted">Battery : {{b.battery}}</small>
-                                    <small class="text-muted">Voltage : {{b.voltage}}</small>
-                                    <small class="text-muted">Amper : {{b.amper}}</small>
-                                </p>
+                              
                             </a>
 
-                        </div>
+                        </div>-->
                         <!-- All-->
                         <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
                             View all <i class="fi-arrow-right"></i>
@@ -195,21 +186,56 @@
             <ul class="metismenu left-sidenav-menu">
                 <li id="DailyMeeting" class="mm-active">
                     @*<a href="javascript: void(0);"><i class="ti-user"></i><span>DOM</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>*@
-                    <button class="btn btn-primary" style="width:100%; text-align:left;"><i class="ti-user"></i><span>&emsp;DOM</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></button>
+                    <button class="btn btn-primary" style="width:100%; text-align:left;"><i class="ti-user"></i><span>&emsp;Security</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></button>
                     <ul class="nav-second-level" aria-expanded="false">
                         <li class="nav-item" id="DashboardView"><a href="#/Dashboard" class="nav-link"><i class="ti-control-record"></i>Dashboard</a></li>
-                        <li class="nav-item" id="MeetingMinutesView"><a href="#/MeetingMinutes" class="nav-link"><i class="ti-control-record"></i>Meeting Minutes</a></li>
-                        @*<li class="nav-item" ng-class="TaskAssignerView"><a href="#/TaskAssigner" class="nav-link"><i class="ti-control-record"></i>Task Assigner</a></li>*@
-                        <li class="nav-item" id="MyTaskView"><a href="#/MyTask" class="nav-link"><i class="ti-control-record"></i>My Task</a></li>
-                        <li class="nav-item" id="MyInfoView"><a href="#/MyInfo" class="nav-link"><i class="ti-control-record"></i>My Info</a></li>
-                        <li class="nav-item" id="TaskRemarksView"><a href="#/TaskRemarks" class="nav-link"><i class="ti-control-record"></i>Response Follow Up</a></li>
-                        @*<li class="nav-item" id="ReportingView"><a href="#/Reporting" class="nav-link"><i class="ti-control-record"></i>Reporting</a></li>*@
+                        <li class="nav-item" id="DashboardView"><a href="#/Dashboard" class="nav-link"><i class="ti-control-record"></i>User Group</a></li>
+                        <li class="nav-item" id="MyTaskView"><a href="#/MyTask" class="nav-link"><i class="ti-control-record"></i>Permission</a></li>
+                    </ul>
+                     
+                </li>
+                <li id="Admin" class="mm-active">
+                    @*<a href="javascript: void(0);"><i class="fa fa-print"></i><span>Report</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>*@
+                    <button class="btn btn-primary" style="width:100%; text-align:left;"><i class="fa fa-print"></i><span>&emsp;Admin</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></button>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li class="nav-item" id="Reporting1View"><a href="#/ItemGroup" class="nav-link"><i class="ti-control-record"></i>Item Group</a></li>
+                        <li class="nav-item" id="TaskStatusView"><a href="#/TaskStatus" class="nav-link"><i class="ti-control-record"></i>Item</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Model" class="nav-link"><i class="ti-control-record"></i>Model</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Measurement Unit</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Vehicle</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Purpose</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Department</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Designation</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Employee</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Approval</a></li>
 
-                        @*<li class="nav-item" ng-class="MeetingMinutesReportView"><a href="#/MeetingMinutesReport" class="nav-link"><i class="ti-control-record"></i>Meeting Minutes</a></li>*@
 
-                        @*<li class="nav-item" ng-class="UserRoleView"><a href="#/UserRole" class="nav-link"><i class="ti-control-record"></i>User Role</a></li>*@
-                        @*<li class="nav-item" ng-class="UserManageView"><a href="#/UserManage" class="nav-link"><i class="ti-control-record"></i>User Manage</a></li>*@
-                        @*<li class="nav-item" ng-class="ApproveRegView"><a class="nav-link" href="#/ApproveReg"><i class="ti-control-record"></i>Approve Reg.</a></li>*@
+                        @*<li class="nav-item" hidden><a class="nav-link" href=""> </a></li>*@
+                    </ul>
+                </li>
+                <li id="StoreManagement" class="mm-active">
+                    @*<a href="javascript: void(0);"><i class="fa fa-print"></i><span>Report</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>*@
+                    <button class="btn btn-primary" style="width:100%; text-align:left;"><i class="fa fa-print"></i><span>&emsp;Main Store</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></button>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li class="nav-item" id="Reporting1View"><a href="#/Reporting1" class="nav-link"><i class="ti-control-record"></i>Purchase Request</a></li>
+                        <li class="nav-item" id="TaskStatusView"><a href="#/TaskStatus" class="nav-link"><i class="ti-control-record"></i>Item Receive</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Item Issue</a></li>
+
+
+                        @*<li class="nav-item" hidden><a class="nav-link" href=""> </a></li>*@
+                    </ul>
+                </li>
+                <li id="WorkShop" class="mm-active">
+                    @*<a href="javascript: void(0);"><i class="fa fa-print"></i><span>Report</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>*@
+                    <button class="btn btn-primary" style="width:100%; text-align:left;"><i class="fa fa-print"></i><span>&emsp;WorkShop</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></button>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li class="nav-item" id="Reporting1View"><a href="#/Reporting1" class="nav-link"><i class="ti-control-record"></i>Job Creation</a></li>
+                        <li class="nav-item" id="Reporting1View"><a href="#/Reporting1" class="nav-link"><i class="ti-control-record"></i>Requisition Slip</a></li>
+                        <li class="nav-item" id="TaskStatusView"><a href="#/TaskStatus" class="nav-link"><i class="ti-control-record"></i>Item Receive</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Item Usage</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Item Adjustment</a></li>
+
+
                         @*<li class="nav-item" hidden><a class="nav-link" href=""> </a></li>*@
                     </ul>
                 </li>
@@ -228,13 +254,13 @@
 
 
                 @*<li hidden>
-                        <a href="javascript: void(0);"><i class="fa fa-print"></i><span>Report</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
-                        <ul class="nav-second-level" aria-expanded="false">
-                            <li class="nav-item"><a class="nav-link" href=""><i class="ti-control-record"></i>Booking Report</a></li>
-                            <li class="nav-item"><a class="nav-link" href=""><i class="ti-control-record"></i>Payment Report</a></li>
+            <a href="javascript: void(0);"><i class="fa fa-print"></i><span>Report</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+            <ul class="nav-second-level" aria-expanded="false">
+                <li class="nav-item"><a class="nav-link" href=""><i class="ti-control-record"></i>Booking Report</a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="ti-control-record"></i>Payment Report</a></li>
 
-                        </ul>
-                    </li>*@
+            </ul>
+        </li>*@
             </ul>
 
 

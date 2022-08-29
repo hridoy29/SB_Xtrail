@@ -9,7 +9,7 @@
         $('.note-popover').css("display", "none");
         //$scope.LoginUser = [];
         $scope.NoticeList = [];
-        $scope.addToCartData = [];
+       
         $scope.UnreadMessageNo = 0;
 
         //All menu control hidden default ----Start
@@ -21,29 +21,9 @@
 
         ///======= Admin==================
 
-        $scope.TaskAssignerView = "menuViewHide";
-        $scope.MyTaskView = "menuViewHide";
-        $scope.Reporting1View = "menuViewHide";
-        $scope.TaskStatusView = "menuViewHide";
-        $scope.MyInfoView = "menuViewHide";
-        $scope.MeetingMinutesView = "menuViewHide";
-        $scope.AnalyticsView = "menuViewHide";
-        $scope.AnalyticsReportView = "menuViewHide";
-        $scope.TaskRemarksView = "menuViewHide";
-
 
         $("#DashboardView").attr("hidden", true);
-        $("#MyTaskView").attr("hidden", true);
-        $("#Reporting1View").attr("hidden", true);
-        $("#TaskStatusView").attr("hidden", true);
-        $("#MyInfoView").attr("hidden", true);
-        $("#MeetingMinutesView").attr("hidden", true);
-        $("#AnalyticsView").attr("hidden", true);
-        $("#AnalyticsReportView").attr("hidden", true);
-        $("#TaskRemarksView").attr("hidden", true);
-
-
-
+     
         
         $scope.ApproveRegView = "menuViewHide";
 

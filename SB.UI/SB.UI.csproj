@@ -94,6 +94,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Threading.Channels, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Channels.4.5.0\lib\netstandard2.0\System.Threading.Channels.dll</HintPath>
@@ -304,6 +305,7 @@
     <Content Include="Content\Toggle.css" />
     <Content Include="Logo\DhakaRej.jpg" />
     <Content Include="Logo\regency_logo.png" />
+    <Content Include="Logo\SB_logo.png" />
     <Content Include="Scripts\Chart.min.js" />
     <Content Include="Scripts\summernote.min.js" />
     <Content Include="Content\assets\Sample\irregular-data-seriz.js" />
@@ -1099,6 +1101,12 @@
     <Content Include="Content\toastr.min.css" />
     <Content Include="Scripts\toastr.min.js" />
     <Content Include="Scripts\util.js" />
+    <Content Include="SPA\Login\Login.html" />
+    <Content Include="SPA\Login\LoginController.js" />
+    <Content Include="SPA\SB\Model\Model.html" />
+    <Content Include="SPA\SB\Model\ModelController.js" />
+    <Content Include="SPA\SB\ItemGroup\ItemGroup.html" />
+    <Content Include="SPA\SB\ItemGroup\ItemGroupController.js" />
     <Content Include="SPA\SB\Dashboard\DashboardController.js" />
     <Content Include="SPA\SB\Dashboard\Dashboard.html" />
     <Content Include="SPA\SB\UserRole\UserRoleEntry.html" />
@@ -1111,8 +1119,6 @@
     <Content Include="SPA\IndexController.js" />
     <Content Include="SPA\LandingPage\LandingPage.html" />
     <Content Include="SPA\LandingPage\LandingPageController.js" />
-    <Content Include="SPA\Login\LoginController.js" />
-    <Content Include="SPA\Login\Login.html" />
     <Content Include="SPA\PageNotFound.html" />
     <Content Include="SPA\Register\Registration.html" />
     <Content Include="SPA\Register\RegisterEntryController.js" />

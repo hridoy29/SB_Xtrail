@@ -106,6 +106,8 @@ namespace SB
                   "~/SPA/SB/UserRole/UserRoleEntryController.js",
 
                   "~/SPA/SB/UserManage/UserManageController.js",
+                  "~/SPA/SB/ItemGroup/ItemGroupController.js",
+                  "~/SPA/SB/Model/ModelController.js",
 
                   //"~/SPA/Login/LoginController.js",
                   "~/SPA/IndexController.js"

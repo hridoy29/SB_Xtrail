@@ -35,9 +35,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,42 +63,24 @@
     <Compile Include="DbExecutor\IEntityBase.cs" />
     <Compile Include="DbExecutor\Parameters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SECURITY\SecurityBLL\ad_EmployeeBLL.cs" />
     <Compile Include="SECURITY\SecurityBLL\Facade.cs" />
     <Compile Include="SECURITY\SecurityBLL\IndexBLL.cs" />
     <Compile Include="SECURITY\SecurityBLL\LoginBLL.cs" />
-    <Compile Include="SECURITY\SecurityBLL\s_PermissionBLL.cs" />
-    <Compile Include="SECURITY\SecurityBLL\s_PermissionDetailBLL.cs" />
-    <Compile Include="SECURITY\SecurityBLL\s_RoleBLL.cs" />
-    <Compile Include="SECURITY\SecurityBLL\s_ScreenBLL.cs" />
-    <Compile Include="SECURITY\SecurityBLL\s_ScreenDetailBLL.cs" />
-    <Compile Include="SECURITY\SecurityBLL\s_ScreenLockBLL.cs" />
     <Compile Include="SECURITY\SecurityBLL\DashboardBLL.cs" />
-    <Compile Include="SECURITY\SecurityDAL\ad_EmployeeDAO.cs" />
     <Compile Include="SECURITY\SecurityDAL\IndexDAO.cs" />
     <Compile Include="SECURITY\SecurityDAL\LoginDAO.cs" />
-    <Compile Include="SECURITY\SecurityDAL\s_ModuleDAO.cs" />
-    <Compile Include="SECURITY\SecurityDAL\s_PermissionDAO.cs" />
-    <Compile Include="SECURITY\SecurityDAL\s_PermissionDetailDAO.cs" />
-    <Compile Include="SECURITY\SecurityDAL\s_RoleDAO.cs" />
-    <Compile Include="SECURITY\SecurityDAL\s_ScreenDAO.cs" />
-    <Compile Include="SECURITY\SecurityDAL\s_ScreenDetailDAO.cs" />
-    <Compile Include="SECURITY\SecurityDAL\s_ScreenLockDAO.cs" />
     <Compile Include="SECURITY\SecurityDAL\DashboardDAO.cs" />
-    <Compile Include="SECURITY\SecurityEntity\ad_Employee.cs" />
     <Compile Include="SECURITY\SecurityEntity\DashboardInfo.cs" />
     <Compile Include="SECURITY\SecurityEntity\Inbox.cs" />
     <Compile Include="SECURITY\SecurityEntity\Login.cs" />
-    <Compile Include="SECURITY\SecurityEntity\s_Module.cs" />
-    <Compile Include="SECURITY\SecurityEntity\s_Permission.cs" />
-    <Compile Include="SECURITY\SecurityEntity\s_PermissionDetail.cs" />
-    <Compile Include="SECURITY\SecurityEntity\s_Role.cs" />
-    <Compile Include="SECURITY\SecurityEntity\s_Screen.cs" />
-    <Compile Include="SECURITY\SecurityEntity\s_ScreenDetail.cs" />
-    <Compile Include="SECURITY\SecurityEntity\s_ScreenLock.cs" />
-    <Compile Include="SECURITY\SecurityEntity\s_User.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
