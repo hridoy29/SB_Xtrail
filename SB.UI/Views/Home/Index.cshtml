@@ -1,4 +1,4 @@
-﻿@{
+@{
     Layout = null;
 }
 
@@ -96,8 +96,7 @@
         <div class="topbar-left">
             <a href="" class="logo">
                 <span >
-                    @*<img src="~/Content/assets/images/logoBackLess.png" style="height: 50px; width:50px;" alt="logo-small" class="logo-sm">*@
-                    @*<img src="~/Logo/DhakaRej.jpg" style="height: 80px; width:80px;" alt="logo-small" class="logo-sm">*@
+                   
                     <img src="~/Logo/SB_logo.png" style="height: 90%; width:auto;" alt="logo-small" class="logo-sm">
                 </span>
 
@@ -141,16 +140,11 @@
                 <li class="dropdown">
                     <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" onclick="profile()" role="button"
                        aria-haspopup="false" aria-expanded="false">
-                        @*<img src="~/Content/assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle" />*@
                         <img src="~/Content/CardImg/profile.png" alt="profile-user" class="rounded-circle" />
                         <span class="ml-1 nav-user-name hidden-sm">{{ LoginUser.username }} <i class="mdi mdi-chevron-down"></i> </span>
                     </a>
                     <div id="Profile" class="dropdown-menu dropdown-menu-right hide">
-                        @*<a class="dropdown-item" href="#/UserProfile"><i class="dripicons-user text-muted mr-2"></i> Profile</a>*@
-                        @*<a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>*@
-                        @*<a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>*@
-                        @*<a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>*@
-                        @*<div class="dropdown-divider"></div>*@
+                      
                         <a class="dropdown-item" onclick="Logout()"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
                     </div>
                 </li>
@@ -168,12 +162,7 @@
                         <i class="dripicons-home" style="font-size:large"></i>
                     </button>
                 </li>
-                @*<li class="hide-phone app-search">
-                    <form role="search" class="">
-                        <input type="text" placeholder="Search..." class="form-control">
-                        <a href=""><i class="fas fa-search" style="margin-top:10px;"></i></a>
-                    </form>
-                </li>*@
+               
             </ul>
         </nav>
         <!-- end navbar-->
@@ -198,15 +187,30 @@
                     @*<a href="javascript: void(0);"><i class="fa fa-print"></i><span>Report</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>*@
                     <button class="btn btn-primary" style="width:100%; text-align:left;"><i class="fa fa-print"></i><span>&emsp;Admin</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></button>
                     <ul class="nav-second-level" aria-expanded="false">
-                        <li class="nav-item" id="Reporting1View"><a href="#/ItemGroup" class="nav-link"><i class="ti-control-record"></i>Item Group</a></li>
-                        <li class="nav-item" id="TaskStatusView"><a href="#/TaskStatus" class="nav-link"><i class="ti-control-record"></i>Item</a></li>
-                        <li class="nav-item" id="AnalyticsView"><a href="#/Model" class="nav-link"><i class="ti-control-record"></i>Model</a></li>
+                        <li class="nav-item" id="ApprovalGivenOnView"><a href="#/ApprovalGivenOn" class="nav-link"><i class="ti-control-record"></i>Approval Given On</a></li>
+                        <li class="nav-item" id="ApprovalStatusView"><a href="#/ApprovalStatus" class="nav-link"><i class="ti-control-record"></i>Approval Status</a></li>
+                        <li class="nav-item" id="BranchView"><a href="#/Branch" class="nav-link"><i class="ti-control-record"></i>Branch</a></li>
+                        <li class="nav-item" id="CounterView"><a href="#/Counter" class="nav-link"><i class="ti-control-record"></i>Counter</a></li>
+                        <li class="nav-item" id="DepartmentView"><a href="#/Department" class="nav-link"><i class="ti-control-record"></i>Department</a></li>
+                        <li class="nav-item" id="DesignationView"><a href="#/Designation" class="nav-link"><i class="ti-control-record"></i>Designation</a></li>
+                        <li class="nav-item" id="EmployeeView"><a href="#/Employee" class="nav-link"><i class="ti-control-record"></i>Employee</a></li>
+                        <li class="nav-item" id="IssueTypeView"><a href="#/IssueType" class="nav-link"><i class="ti-control-record"></i>Issue Type</a></li>
+                        <li class="nav-item" id="ItemView"><a href="#/Item" class="nav-link"><i class="ti-control-record"></i>Item</a></li>
+                        <li class="nav-item" id="ItemGroup1View"><a href="#/ItemGroup" class="nav-link"><i class="ti-control-record"></i>Item Group</a></li>
                         <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Measurement Unit</a></li>
+                        <li class="nav-item" id="AnalyticsView"><a href="#/Model" class="nav-link"><i class="ti-control-record"></i>Model</a></li>
+                        <li class="nav-item" id="MotherCompanyView"><a href="#/MotherCompany" class="nav-link"><i class="ti-control-record"></i>Mother Company</a></li>
+                        <li class="nav-item" id="PurposeView"><a href="#/Purpose" class="nav-link"><i class="ti-control-record"></i>Purpose</a></li>
+                        <li class="nav-item" id="RequisitionTypeView"><a href="#/RequisitionType" class="nav-link"><i class="ti-control-record"></i>Requisition Type</a></li>
+                        <li class="nav-item" id="StoreView"><a href="#/Store" class="nav-link"><i class="ti-control-record"></i>Store</a></li>
+                        <li class="nav-item" id="StoreRackView"><a href="#/StoreRack" class="nav-link"><i class="ti-control-record"></i>Store Rack</a></li>
+                        <li class="nav-item" id="SupplierView"><a href="#/Supplier" class="nav-link"><i class="ti-control-record"></i>Supplier</a></li>
+                        <li class="nav-item" id="TransactionApprovalView"><a href="#/TransactionApproval" class="nav-link"><i class="ti-control-record"></i>Transaction Approval</a></li>
+                        <li class="nav-item" id="VatView"><a href="#/Vat" class="nav-link"><i class="ti-control-record"></i>Vat</a></li>
                         <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Vehicle</a></li>
-                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Purpose</a></li>
-                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Department</a></li>
-                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Designation</a></li>
-                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Employee</a></li>
+
+
+
                         <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Approval</a></li>
 
 
@@ -217,9 +221,20 @@
                     @*<a href="javascript: void(0);"><i class="fa fa-print"></i><span>Report</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>*@
                     <button class="btn btn-primary" style="width:100%; text-align:left;"><i class="fa fa-print"></i><span>&emsp;Main Store</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></button>
                     <ul class="nav-second-level" aria-expanded="false">
-                        <li class="nav-item" id="Reporting1View"><a href="#/Reporting1" class="nav-link"><i class="ti-control-record"></i>Purchase Request</a></li>
-                        <li class="nav-item" id="TaskStatusView"><a href="#/TaskStatus" class="nav-link"><i class="ti-control-record"></i>Item Receive</a></li>
-                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Item Issue</a></li>
+                        <li class="nav-item" id="AdjustmentView"><a href="#/Adjustment" class="nav-link"><i class="ti-control-record"></i>Adjustment</a></li>
+                        <li class="nav-item" id="DamagedItemStockLedgerView"><a href="#/DamagedItemStockLedger" class="nav-link"><i class="ti-control-record"></i>Damaged Item Stock Ledger</a></li>
+                        <li class="nav-item" id="OpeningStockView"><a href="#/OpeningStock" class="nav-link"><i class="ti-control-record"></i>Opening Stock</a></li>
+                        <li class="nav-item" id="PurchaseRequestView"><a href="#/PurchaseRequest" class="nav-link"><i class="ti-control-record"></i>Purchase Request</a></li>
+                        <li class="nav-item" id="PurchaseBillView"><a href="#/PurchaseBill" class="nav-link"><i class="ti-control-record"></i>Purchase Bill</a></li>
+                        <li class="nav-item" id="StockAuditView"><a href="#/StockAudit" class="nav-link"><i class="ti-control-record"></i>Stock Audit</a></li>
+                        <li class="nav-item" id="StoreItemReceiveView"><a href="#/StoreItemReceive" class="nav-link"><i class="ti-control-record"></i>Store Item Receive</a></li>
+                        <li class="nav-item" id="StockLedgerView"><a href="#/StockLedger" class="nav-link"><i class="ti-control-record"></i>Stock Ledger</a></li>
+                        <li class="nav-item" id="StoreIssueView"><a href="#/StoreIssue" class="nav-link"><i class="ti-control-record"></i>Store Issue</a></li>
+
+
+
+
+
 
 
                         @*<li class="nav-item" hidden><a class="nav-link" href=""> </a></li>*@
@@ -229,12 +244,12 @@
                     @*<a href="javascript: void(0);"><i class="fa fa-print"></i><span>Report</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>*@
                     <button class="btn btn-primary" style="width:100%; text-align:left;"><i class="fa fa-print"></i><span>&emsp;WorkShop</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></button>
                     <ul class="nav-second-level" aria-expanded="false">
-                        <li class="nav-item" id="Reporting1View"><a href="#/Reporting1" class="nav-link"><i class="ti-control-record"></i>Job Creation</a></li>
-                        <li class="nav-item" id="Reporting1View"><a href="#/Reporting1" class="nav-link"><i class="ti-control-record"></i>Requisition Slip</a></li>
-                        <li class="nav-item" id="TaskStatusView"><a href="#/TaskStatus" class="nav-link"><i class="ti-control-record"></i>Item Receive</a></li>
-                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Item Usage</a></li>
-                        <li class="nav-item" id="AnalyticsView"><a href="#/Analytics" class="nav-link"><i class="ti-control-record"></i>Item Adjustment</a></li>
-
+                        <li class="nav-item" id="JobCreationView"><a href="#/JobCreation" class="nav-link"><i class="ti-control-record"></i>Job Creation</a></li>
+                        <li class="nav-item" id="RequisitionSlipView"><a href="#/RequisitionSlip" class="nav-link"><i class="ti-control-record"></i>Requisition Slip</a></li>
+                        <li class="nav-item" id="ItemReceiveView"><a href="#/ItemReceive" class="nav-link"><i class="ti-control-record"></i>Item Receive</a></li>
+                        <li class="nav-item" id="ItemAdjustmentView"><a href="#/ItemAdjustment" class="nav-link"><i class="ti-control-record"></i>Item Adjustment</a></li>
+                        <li class="nav-item" id="DamagedItemStockLedgerView"><a href="#/DamagedItemStockLedger" class="nav-link"><i class="ti-control-record"></i>Damaged Item Stock Ledger</a></li>          
+                        <li class="nav-item" id="Item UsageView"><a href="#/Item Usage" class="nav-link"><i class="ti-control-record"></i>Item Usage</a></li>
 
                         @*<li class="nav-item" hidden><a class="nav-link" href=""> </a></li>*@
                     </ul>
@@ -304,203 +319,4 @@
     <script src="/Content/assets/plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="/Content/assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
 
-    <script src="/Content/assets/plugins/datatables/dataTables.buttons.min.js"></script>
-
-
-    <!-- Responsive examples -->
-    <script src="/Content/assets/plugins/datatables/dataTables.responsive.min.js"></script>
-    <script src="/Content/assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
-    <script src="/Content/assets/pages/jquery.datatable.init.js"></script>
-
-    <script src="/Content/assets/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
-    <script>
-
-        //(function () {
-        //    app.controller('NotificationController', function ($scope) {
-        //        //$scope.name = 'Guest';
-        //        //$scope.message = '';
-        //        //$scope.messages = [];
-        //        $scope.batteryStatus = [];
-        //        $scope.notificationHub = null;
-        //        $scope.notificationHub = $.connection.notificationHub;
-        //        $.connection.hub.start().done(function () {
-        //             alert("SignalR Connected!!!!")
-        //        });
-        //        //$scope.notificationHub.client.broadcastMessage = function (name, message) {
-
-        //        //    $scope.notificationObj = {};
-        //        //    $scope.notificationObj.name = name;
-        //        //    $scope.notificationObj.message = message;
-        //        //    //$scope.messages.name = name;
-        //        //    //$scope.messages.message = message
-        //        //    $scope.messages.push($scope.notificationObj);
-        //        //    /*$scope.messages = [{ name: 'Belal', message: 'Hi' }, { name: 'Shovo', message: 'How are you' }];*/
-        //        //    $('#notiCount').text($scope.messages.length);
-        //        //    $('#notiAll').text('Notifications (' + $scope.messages.length + ')');
-        //        //    $scope.$apply();
-        //        //};
-        //        // $scope.messages = [{ name: 'Belal', message: 'Hi' }, { name: 'Shovo', message: 'How are you' }];
-
-        //        $scope.notificationHub.client.broadcastBatteryStatus = function (location, swapStation, chargingUnit, battery, voltage, amper) {
-
-        //            $scope.batteryStatusObj = {};
-        //            $scope.batteryStatusObj.location = location;
-        //            $scope.batteryStatusObj.swapStation = swapStation;
-        //            $scope.batteryStatusObj.chargingUnit = chargingUnit;
-        //            $scope.batteryStatusObj.battery = battery;
-        //            $scope.batteryStatusObj.voltage = voltage;
-        //            $scope.batteryStatusObj.amper = amper;
-        //            //$scope.messages.name = name;
-        //            //$scope.messages.message = message
-        //            $scope.batteryStatus.push($scope.batteryStatusObj);
-        //            console.log($scope.batteryStatus);
-        //            /*$scope.messages = [{ name: 'Belal', message: 'Hi' }, { name: 'Shovo', message: 'How are you' }];*/
-        //            $('#notiCount').text($scope.batteryStatus.length);
-        //            $('#notiAll').text('Notifications (' + $scope.batteryStatus.length + ')');
-        //            $scope.$apply();
-        //        };
-
-        //    });
-        //})();
-
-
-
-
-        $('#removeCount').click(function () {
-            $('#notiCount').text('');
-
-        });
-
-        function navBarShow() {
-            $('.left-sidenav').css("display", "block");
-        }
-        $('.note-popover').css("display", "none");
-
-        $(document).click(function (evt) {
-            if (evt.target.id == "Profile") {
-                return;
-            } else {
-                $('#Profile').addClass('hide').removeClass('show');
-                $('#NotificationBell').addClass('hide').removeClass('show');
-            }
-        });
-        function profile() {
-            var className = $('#Profile').attr('class');
-            var mth = className.match(/hide/g);
-            if (mth == 'hide') {
-                $('#Profile').addClass('show').removeClass('hide');
-                $('#NotificationBell').addClass('hide').removeClass('show');
-            } else {
-                $('#Profile').addClass('hide').removeClass('show');
-
-            }
-
-        }
-
-        function notificationBell() {
-            var className = $('#NotificationBell').attr('class');
-            var mth = className.match(/hide/g);
-            if (mth == 'hide') {
-                $('#NotificationBell').addClass('show').removeClass('hide');
-                $('#Profile').addClass('hide').removeClass('show');
-            } else {
-                $('#NotificationBell').addClass('hide').removeClass('show');
-            }
-
-        }
-
- 
-
-        function Logout() {
-            window.location = '/';
-        }
-        function HideTab() {
-
-            $(".left-sidenav").toggle();
-        }
-        (function ($) {
-
-            'use strict';
-
-            function initSlimscroll() {
-                $('.slimscroll').slimscroll({
-                    height: 'auto',
-                    position: 'right',
-                    size: "7px",
-                    color: '#e0e5f1',
-                    opacity: 1,
-                    wheelStep: 5,
-                    touchScrollStep: 50
-                });
-            }
-
-
-            function initMetisMenu() {
-                //metis menu
-                $(".metismenu").metisMenu();
-            }
-
-            function initLeftMenuCollapse() {
-                // Left menu collapse
-                $('.button-menu-mobile').on('click', function (event) {
-                    event.preventDefault();
-                    $("body").toggleClass("enlarge-menu");
-                    initSlimscroll();
-                });
-            }
-
-            function initEnlarge() {
-                if ($(window).width() < 1025) {
-                    $('body').addClass('enlarge-menu');
-                } else {
-                    if ($('body').data('keep-enlarged') != true)
-                        $('body').removeClass('enlarge-menu');
-                }
-            }
-
-            function initTooltipPlugin() {
-                $.fn.tooltip && $('[data-toggle="tooltip"]').tooltip()
-            }
-
-
-
-            function initActiveMenu() {
-                // === following js will activate the menu in left side bar based on url ====
-                $(".left-sidenav a").each(function () {
-                    var pageUrl = window.location.href.split(/[?#]/)[0];
-                    if (this.href == pageUrl) {
-                        $(this).addClass("active");
-                        $(this).parent().addClass("active"); // add active to li of the current link
-                        $(this).parent().parent().addClass("in");
-                        $(this).parent().parent().addClass("mm-show");
-                        $(this).parent().parent().parent().addClass("mm-active");
-                        $(this).parent().parent().prev().addClass("active"); // add active class to an anchor
-                        $(this).parent().parent().parent().addClass("active");
-                        $(this).parent().parent().parent().parent().addClass("mm-show"); // add active to li of the current link
-                        $(this).parent().parent().parent().parent().parent().addClass("mm-active");
-
-                    }
-                });
-            }
-
-
-
-            function init() {
-                initSlimscroll();
-                initMetisMenu();
-                initLeftMenuCollapse();
-                initEnlarge();
-                initTooltipPlugin();
-                initActiveMenu();
-                Waves.init();
-            }
-
-            init();
-
-        })(jQuery)
-
-    </script>
-
-</body>
+    <script src="/Content/assets/plugins/datatables/dataTables.buttons.min.j
